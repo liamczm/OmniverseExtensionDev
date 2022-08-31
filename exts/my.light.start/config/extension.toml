@@ -1,0 +1,28 @@
+[package]
+# Semantic Versionning is used: https://semver.org/
+version = "1.0.0"
+
+# The title and description fields are primarily for displaying extension info in UI
+title = "My Revit View Project"
+description="The Revit View Tools, View revit infomations in viewport"
+
+# Path (relative to the root) or content of readme markdown file for UI.
+readme  = "docs/README.md"
+
+# URL of the extension source repository.
+repository = ""
+
+# One of categories for UI.
+category = "WorkByHendrix"
+
+# Keywords for the extension
+keywords = ["kit", "revit","Scene Modifier"]
+
+
+# Use omni.ui to build simple UI
+[dependencies]
+"omni.kit.uiapp" = {}
+
+# Main python module this extension provides, it will be publicly available as "import my.light.start".
+[[python.module]]
+name = "my.light.start"
